@@ -4,10 +4,8 @@ from typing import Optional
 from utils.gemini_utils import  generate_response_stream
 from fastapi.responses import StreamingResponse
 
-# Create router
 router = APIRouter()
 
-# Models for requests
 class TestPost(BaseModel):
     message: str
 
